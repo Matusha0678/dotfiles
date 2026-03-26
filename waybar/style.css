@@ -1,0 +1,31 @@
+* { 
+    border: none; 
+    border-radius: 0; 
+    font-family: "JetBrainsMono Nerd Font", sans-serif; 
+    font-size: 13px; 
+}
+
+window#waybar { 
+    background: rgba(0, 0, 0, 0.7); /* Почти черный фон самой панели */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+#custom-launcher, #workspaces, #mpris, #clock, #tray, #language, #pulseaudio, #custom-power {
+    background: rgba(40, 40, 45, 0.4); /* Темно-серый, но прозрачный (не черный!) */
+    color: #ffffff;
+    margin: 6px 4px;
+    padding: 0 12px;
+    border-radius: 8px;
+    min-height: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Тонкая светлая обводка */
+}
+
+/* Активный воркспейс — чуть светлее остальных, но не вырвиглазно */
+#workspaces button.active { 
+    background: rgba(100, 100, 100, 0.3); 
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+#custom-launcher { background: transparent; font-size: 18px; margin-left: 15px; }
+#custom-power { margin-right: 15px; }

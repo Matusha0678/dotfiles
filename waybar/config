@@ -1,0 +1,17 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "margin-top": 0,
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "mpris"],
+    "modules-center": ["clock"],
+    "modules-right": ["hyprland/language", "pulseaudio", "tray", "custom/power"],
+    "custom/launcher": { "format": "󰣇" },
+    "hyprland/workspaces": { "format": "{name}" },
+    "mpris": { "format": "  {title}", "max-length": 25 },
+    "clock": { "format": "{:%H:%M}" },
+    "hyprland/language": { "format": "{short}" },
+    "pulseaudio": { "format": " {volume}%" },
+    "tray": { "icon-size": 18, "spacing": 10 },
+    "custom/power": { "format": "" }
+}

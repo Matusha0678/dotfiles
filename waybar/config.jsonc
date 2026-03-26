@@ -1,0 +1,31 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "spacing": 0,
+    "modules-left": ["custom/launcher", "custom/chrome", "custom/github", "custom/terminal"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "network", "clock"],
+
+    "custom/launcher": { "format": "  ", "on-click": "rofi -show drun" },
+    "custom/chrome": { "format": "   ", "on-click": "google-chrome-stable" },
+    "custom/github": { "format": "  ", "on-click": "xdg-open https://github.com" },
+    "custom/terminal": { "format": "   ", "on-click": "kitty" },
+
+    "hyprland/workspaces": { "format": "{name}" },
+    
+    /* Добавил по два пробела после иконок для дистанции */
+    "clock": { "format": "  {:%H:%M}" },
+    
+    "pulseaudio": { 
+        "format": "{icon}  {volume}%", 
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol"
+    },
+    
+    "network": { 
+        "format-wifi": "   {essid}", /* Тут теперь королевский отступ */
+        "format-disconnected": "󰖪  Offline",
+        "on-click": "kitty -e nmtui"
+    }
+}
