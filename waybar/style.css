@@ -30,3 +30,8 @@ window#waybar {
 
 #custom-launcher { background: transparent; font-size: 18px; margin-left: 15px; }
 #custom-power { margin-right: 15px; }
+
+#cava {
+    padding: 0 6px;
+    letter-spacing: 1px;
+}
