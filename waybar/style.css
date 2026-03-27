@@ -1,28 +1,29 @@
-* { 
-    border: none; 
-    border-radius: 0; 
-    font-family: "JetBrainsMono Nerd Font", sans-serif; 
-    font-size: 13px; 
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
 }
 
-window#waybar { 
+window#waybar {
     background: rgba(0, 0, 0, 0.7); /* Почти черный фон самой панели */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-#custom-launcher, #workspaces, #mpris, #clock, #tray, #language, #pulseaudio, #custom-power {
-    background: rgba(40, 40, 45, 0.4); /* Темно-серый, но прозрачный (не черный!) */
+#custom-launcher, #workspaces, #mpris, #cava, #clock, #tray, #language, #pulseaudio, #custom-power {
+    background: rgb(20, 20, 20); /* Глубокий темный цвет, почти сливается с фоном */
     color: #ffffff;
-    margin: 6px 4px;
+    margin: 11px 4px;
     padding: 0 12px;
     border-radius: 8px;
-    min-height: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Тонкая светлая обводка */
+    min-height: 28px;
+    /* Оставляем очень тонкую, почти невидимую обводку для объема */
+    border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-/* Активный воркспейс — чуть светлее остальных, но не вырвиглазно */
-#workspaces button.active { 
-    background: rgba(100, 100, 100, 0.3); 
+/* Чтобы активный воркспейс не горел слишком ярко на фоне темных модулей */
+#workspaces button.active {
+    background: rgb(60, 60, 60); /* Темнее, чем было, для баланса */
     color: #ffffff;
     border-radius: 6px;
 }
