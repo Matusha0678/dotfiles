@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0.7); /* Почти черный фон самой панели */
+    background: rgba(16, 16, 16, 0.7); /* Почти черный фон самой панели */
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
